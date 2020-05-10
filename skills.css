@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+
+body{
+    background-image: url("imgs/home.jpg");
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;       
+}
+.sidebar{
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    background-color: #111;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+.sidebar a{
+    padding: 6px 8px 6px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #818181;
+    display: block;    
+    
+}
+
+.fa{
+    box-sizing: 40px;
+    width: 35px;
+    text-align: center;
+    transition: all .4s;
+}
+
+.fa:hover{
+    background-color: #909FEA;
+    border-radius: 500%;  
+    color: whitesmoke;
+    opacity: 10;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.fa.smi{
+    font-size: 15px;
+    padding-top: 5px;
+    transition: all .5s;
+}
+
+.fa.fa-instagram:hover{
+    background: #e4405f;
+    color: white;
+}
+
+.fa.fa-linkedin:hover{
+    background: #0077b5;
+    color: white;
+}
+
+.fa.fa-github:hover{
+    background: #00405d;
+    color: white;
+}
+
+.fa.fa-twitter:hover{
+    background: #00acee;    
+    color: white;
+}
+
+.logo{
+    text-align: center;
+    color: #818181;
+    background-color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    top: 0;
+    width: 60px;
+    height: 50px;
+    border: 3px solid black;
+    transition: all .4s;
+}
+
+.logo:hover{
+    border: 3px solid whitesmoke;
+    opacity: 10;
+    color: whitesmoke;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.header{
+    padding-top: 110px ;
+    padding-left: 150px;
+    text-decoration: none;
+    font-size: 60px;
+    width: 700px;
+    position: relative;
+}
+
+.header h1{
+    color: #909FEA;
+    letter-spacing: 5px;
+    padding-bottom: 2rem;
+}
+.header p{
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.header span{
+    color: #909FEA;
+    font-family: cursive;
+}
+/******************** Floating Text *******************/
+.animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.animation-container span {
+    color: whitesmoke;
+    display: block;
+    font-size: 18px;
+    font-family: 'Helvetica';
+    text-shadow: 0 0 1px white;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-timing-function: ease-out;
+    animation-name: move;
+  }
+  
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateY(100vh);
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: none;
+    }
+  }

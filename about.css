@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body{
+    background-image: url("imgs/home.jpg");
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;       
+}
+.sidebar{
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    background-color: #111;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+.sidebar a{
+    padding: 6px 8px 6px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #818181;
+    display: block;    
+    
+}
+
+.fa{
+    box-sizing: 40px;
+    width: 35px;
+    text-align: center;
+    transition: all .4s;
+}
+
+.fa:hover{
+    background-color: #909FEA;
+    border-radius: 500%;  
+    color: whitesmoke;
+    opacity: 10;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.fa.smi{
+    font-size: 15px;
+    padding-top: 5px;
+    transition: all .5s;
+}
+
+.fa.fa-instagram:hover{
+    background: #e4405f;
+    color: white;
+}
+
+.fa.fa-linkedin:hover{
+    background: #0077b5;
+    color: white;
+}
+
+.fa.fa-github:hover{
+    background: #00405d;
+    color: white;
+}
+
+.fa.fa-twitter:hover{
+    background: #00acee;    
+    color: white;
+}
+
+.logo{
+    text-align: center;
+    color: #818181;
+    background-color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    top: 0;
+    width: 60px;
+    height: 50px;
+    border: 3px solid black;
+    transition: all .4s;
+}
+
+.logo:hover{
+    border: 3px solid whitesmoke;
+    opacity: 10;
+    color: whitesmoke;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.header{
+    padding-top: 200px ;
+    padding-left: 150px;
+    text-decoration: none;
+    font-size: 60px;
+    width: 700px;
+    position: relative;
+}
+
+.header h1{
+    color: #909FEA;
+    letter-spacing: 5px;
+    padding-bottom: 2rem;
+    font-weight: 400;
+}
+.header p{
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.header span{
+    color: #909FEA;
+    font-family: cursive;
+}
+
+/******************** Image Animation *************/  
+  .container {
+    border: solid 4px #909FEA;
+    border-radius: 100%;
+    left: 800px;
+    top: 10px;
+    box-shadow: 1 1 10px white;
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+    width: 350px;
+  }
+  
+  img {
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  img:nth-child(3) {
+    animation: left 3s ease-in-out infinite alternate;
+  }
+  img:nth-child(2) {
+    animation: right 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes left {
+    100% {
+      filter: hue-rotate(90deg);
+      transform: translateX(-2%);
+    }
+  }
+  @keyframes right {
+    100% {
+      filter: hue-rotate(-90deg);
+      transform: translateX(2%);
+    }
+  }
+  
