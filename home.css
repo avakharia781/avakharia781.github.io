@@ -205,18 +205,18 @@ hr{
         transition: all .4s;
     }  
     h1{
-        padding-top: 100px ;
-        padding-left: 100px;
-        font-size: 30px;
+        padding-top: 80px ;
+        padding-left: 60px;
+        font-size: 20px;
     }
     
     h2{
-        padding-left: 100px;
-        font-size: 20px;
+        padding-left: 80px;
+        font-size: 15px;
         font-weight: 100;
     }
     span{
-        font-size: 10px;
+        font-size: 8px;
     }          
     .footer{
         bottom: 50px;
@@ -235,8 +235,8 @@ hr{
       }  
 
       .wrapper {
-        top: 280px;
-        left:35%;
+        top: 300px;
+        left:40%;
         -webkit-transform: translate(-50%,-50%);
         font-size: small;
       }
