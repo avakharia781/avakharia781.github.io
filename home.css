@@ -173,3 +173,71 @@ hr{
       -webkit-mask-position: -50%;
     }
   }
+
+  @media (max-width: 576px) {
+    .sidebar{
+        height: 100%;
+        width: 30px;
+        top: 30px;
+        padding-top: 40px;
+    }    
+    .sidebar a{
+        padding: 4px 4px 4px 5px;
+        font-size: small; 
+    } 
+    .fa{
+        box-sizing: 20px;
+        width: 15px;
+    }    
+    .fa.smi{
+        font-size: 10px;
+        padding-top: 4px;
+        transition: all .5s;
+    }   
+    .logo{
+        font-weight: 200;
+        font-size: 1rem;
+        padding: 5px 5px;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border: 1.5px solid black;
+        transition: all .4s;
+    }  
+    h1{
+        padding-top: 100px ;
+        padding-left: 100px;
+        font-size: 30px;
+    }
+    
+    h2{
+        padding-left: 100px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    span{
+        font-size: 10px;
+    }          
+    .footer{
+        bottom: 50px;
+        width: 75%;
+        left: 15%;
+        height: 15px;
+
+    }
+    
+    hr{
+        border: 1px solid#909FEA; 
+    }
+    #quotes {
+        font-size: x-small;
+        display: inline-block;
+      }  
+
+      .wrapper {
+        top: 280px;
+        left:35%;
+        -webkit-transform: translate(-50%,-50%);
+        font-size: small;
+      }
+}  
