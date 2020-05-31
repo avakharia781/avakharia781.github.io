@@ -136,6 +136,12 @@ body{
     right: 0;
     top: 0;
   }
+  #circle
+  {
+    border-radius:50% 50% 50% 50%;  
+    width:350px;
+    height:350px;
+ }
   img:nth-child(3) {
     animation: left 3s ease-in-out infinite alternate;
   }
@@ -155,4 +161,72 @@ body{
       transform: translateX(2%);
     }
   }
+/*****************Mobile Width************/
+@media (max-width: 576px) {
+  .sidebar{
+      height: 100%;
+      width: 40px;
+      top: 30px;
+      padding-top: 40px;
+  }    
+  .sidebar a{
+      padding: 4px 4px 4px 8px;
+      font-size: small; 
+  } 
+  .fa{
+      box-sizing: 20px;
+      width: 15px;
+  }    
+  .fa.smi{
+      font-size: 15px;
+      padding-top: 4px;
+      padding-left: 9px;
+      transition: all .5s;
+  }   
+  .logo{
+      font-weight: 100;
+      font-size: 1rem;
+      padding-left: .1em;
+      padding-top: .1em;
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      transition: all .4s;
+  }  
+  .header{
+    padding-top: 220px ;
+    padding-left: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 500px;
+    position: relative;
+  }
+  .header h1{
+    color: #909FEA;
+    letter-spacing: 5px;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .header p{
+    font-size: 12px;
+    color: whitesmoke;
+  }
+  span{
+      font-size: 14px;
+  } 
+  .container {
+    border: solid 2px #909FEA;
+    left: 300px;
+    height: 150px;
+    width: 150px;
+  }
+  #circle
+  {
+    border-radius:50% 50% 50% 50%;  
+    width:150px;
+    height:150px;
+  }  
+           
+}
   
