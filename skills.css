@@ -160,12 +160,42 @@ body{
   }
 /*********************MobileDevice********************/
 @media (max-width: 576px) {
+    .sidebar{
+        height: 100%;
+        width: 40px;
+        top: 30px;
+        padding-top: 40px;
+    }    
+    .sidebar a{
+        padding: 4px 4px 4px 8px;
+        font-size: small; 
+    } 
+    .fa{
+        box-sizing: 20px;
+        width: 15px;
+    }    
+    .fa.smi{
+        font-size: 15px;
+        padding-top: 4px;
+        padding-left: 9px;
+        transition: all .5s;
+    }   
+    .logo{
+        font-weight: 100;
+        font-size: 1rem;
+        padding-left: .1em;
+        padding-top: .1em;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        transition: all .4s;
+    }    
     .header{
         padding-top: 110px ;
-        padding-left: 100px;
+        padding-left: 75px;
         text-decoration: none;
         font-size: 30px;
-        width: 700px;
+        width: 480px;
         position: absolute;
     }
     
