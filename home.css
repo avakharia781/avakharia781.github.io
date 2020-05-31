@@ -174,10 +174,10 @@ hr{
     }
   }
 
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
     .sidebar{
         height: 100%;
-        width: 30px;
+        width: 40px;
         top: 30px;
         padding-top: 40px;
     }    
@@ -190,8 +190,9 @@ hr{
         width: 15px;
     }    
     .fa.smi{
-        font-size: 10px;
+        font-size: 15px;
         padding-top: 4px;
+        padding-left: 9px;
         transition: all .5s;
     }   
     .logo{
@@ -199,27 +200,27 @@ hr{
         font-size: 1rem;
         padding: 5px 5px;
         top: 0;
-        width: 30px;
+        width: 40px;
         height: 30px;
         border: 1.5px solid black;
         transition: all .4s;
     }  
     h1{
-        padding-top: 80px ;
-        padding-left: 60px;
-        font-size: 20px;
+        padding-top: 120px ;
+        padding-left: 110px;
+        font-size: 30px;
     }
     
     h2{
-        padding-left: 80px;
-        font-size: 15px;
+        padding-left: 100px;
+        font-size: 20px;
         font-weight: 100;
     }
     span{
-        font-size: 8px;
+        font-size: 20px;
     }          
     .footer{
-        bottom: 50px;
+        bottom: 100px;
         width: 75%;
         left: 15%;
         height: 15px;
@@ -235,9 +236,9 @@ hr{
       }  
 
       .wrapper {
-        top: 300px;
-        left:40%;
+        top: 280px;
+        padding-left: 100px;
         -webkit-transform: translate(-50%,-50%);
         font-size: small;
       }
-}  
+}
