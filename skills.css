@@ -120,6 +120,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
   }
 
 .animation-container span {
@@ -157,3 +158,32 @@ body{
       transform: none;
     }
   }
+/*********************MobileDevice********************/
+@media (max-width: 576px) {
+    .header{
+        padding-top: 110px ;
+        padding-left: 100px;
+        text-decoration: none;
+        font-size: 30px;
+        width: 700px;
+        position: absolute;
+    }
+    
+    .header h1{
+        color: #909FEA;
+        letter-spacing: 5px;
+        padding-bottom: 2rem;
+        font-size: 30px;
+    }
+    .header p{
+        font-size: 14px;
+        color: whitesmoke;
+    }
+    
+    .animation-container span {
+        font-size: .5em;
+        font-family: 'Helvetica';
+      }
+          
+
+}   
