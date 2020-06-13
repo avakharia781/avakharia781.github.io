@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
 body{
-    background-image: url("imgs/home.jpg");
+    background-image: url("/MyNewPage/imgs/home.jpg");
     font-family: 'Dosis', sans-serif;
     overflow: hidden;       
 }
