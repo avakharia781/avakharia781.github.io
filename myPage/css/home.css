@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
 body{
-    background-image: url("/MyNewPage/imgs/home.jpg");
+    background-image: url('/myPage/imgs/home.jpg');
     font-family: 'Dosis', sans-serif;
-    overflow: hidden;       
+    overflow: block;
 }
 .sidebar{
     height: 100%;
@@ -90,75 +90,90 @@ body{
     box-shadow: 2px 2px 24px #fff;
 }
 
-.header{
-    padding-top: 110px ;
-    padding-left: 150px;
+h1{
+    padding-top: 150px ;
+    padding-left: 200px;
     text-decoration: none;
     font-size: 60px;
-    width: 700px;
     position: relative;
-}
-
-.header h1{
-    color: #909FEA;
-    letter-spacing: 5px;
-    padding-bottom: 2rem;
-}
-.header p{
-    font-size: 17px;
     color: whitesmoke;
+    text-shadow: .5px .5px 1px #D9D9D9; 
 }
 
-.header span{
+h2{
+    padding-left: 200px;
+    font-size: 40px;
+    font-weight: 200;
+    color: whitesmoke;
+    text-shadow: .5px .5px 1px #D9D9D9; 
+}
+
+span{
     color: #909FEA;
     font-family: cursive;
+    font-size: 50px;
+    text-shadow: .4px .4px .4px #DE2C1B .5px .5px 1px #DE2C1B;
+    opacity: 10;
+
 }
-/******************** Floating Text *******************/
-.animation-container {
+
+.name{
+  color: #909FEA;
+  font-family: cursive;
+}
+
+.footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    bottom: 100px;
+    width: 80%;
+    left: 10%;
+    color: whitesmoke;
+    text-align: center;
+    height: 15px;
+    border-top: #909FEA;
+    
+}
+
+hr{
+    border: 2px solid#909FEA; 
+    width: 100%;"
+}
+#quotes {
+    font-size: large;
+    display: inline-block;
   }
 
-.animation-container span {
-    color: whitesmoke;
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 500px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* Glitch Style*/
+.wrapper {
     display: block;
-    font-size: 18px;
-    font-family: 'Helvetica';
-    text-shadow: 0 0 1px white;
     position: absolute;
-    user-select: none;
-    pointer-events: none;
-    cursor: default;
-    opacity: 0;
-    will-change: transform, opacity;
-    animation-timing-function: ease-out;
-    animation-name: move;
+    top: 430px;
+    left:21%;
+    -webkit-transform: translate(-50%,-50%);
+  }
+.effect-shine {
+    color: whitesmoke;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 300%;
+    animation: shine 2s infinite;
   }
   
-  @keyframes move {
-    0% {
-      opacity: 0;
-      transform: translateY(100vh);
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
     }
-    25% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-      transform: none;
+    
+    to {
+      -webkit-mask-position: -50%;
     }
   }
-/*********************MobileDevice********************/
+
 @media (max-width: 576px) {
     .sidebar{
         height: 100%;
@@ -167,7 +182,7 @@ body{
         padding-top: 40px;
     }    
     .sidebar a{
-        padding: 4px 4px 4px 8px;
+        padding: 4px 4px 4px 5px;
         font-size: small; 
     } 
     .fa{
@@ -181,39 +196,49 @@ body{
         transition: all .5s;
     }   
     .logo{
-        font-weight: 100;
+        font-weight: 200;
         font-size: 1rem;
-        padding-left: .1em;
-        padding-top: .1em;
-        width: 30px;
+        padding: 5px 5px;
+        top: 0;
+        width: 40px;
         height: 30px;
-        border: 1px solid black;
+        border: 1.5px solid black;
         transition: all .4s;
-    }    
-    .header{
-        padding-top: 110px ;
-        padding-left: 75px;
-        text-decoration: none;
-        font-size: 30px;
-        width: 480px;
-        position: absolute;
-    }
-    
-    .header h1{
-        color: #909FEA;
-        letter-spacing: 5px;
-        padding-bottom: 2rem;
+    }  
+    h1{
+        padding-top: 120px ;
+        padding-left: 110px;
         font-size: 30px;
     }
-    .header p{
-        font-size: 14px;
-        color: whitesmoke;
-    }
     
-    .animation-container span {
-        font-size: .5em;
-        font-family: 'Helvetica';
-      }
-          
+    h2{
+        padding-left: 100px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    span{
+        font-size: 20px;
+    }          
+    .footer{
+        bottom: 100px;
+        width: 75%;
+        left: 15%;
+        height: 15px;
 
-}   
+    }
+    
+    hr{
+        border: 1px solid#909FEA; 
+    }
+    #quotes {
+        font-size: x-small;
+        display: inline-block;
+      }  
+
+      .wrapper {
+        top: 280px;
+        padding-left: 100px;
+        -webkit-transform: translate(-50%,-50%);
+        font-size: small;
+      }
+}

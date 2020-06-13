@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
 body{
-    background-image: url("/MyNewPage/imgs/home.jpg");
+    background-image: url("/myPage/imgs/home.jpg");
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;       
 }
