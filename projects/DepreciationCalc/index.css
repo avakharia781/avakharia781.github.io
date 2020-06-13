@@ -1,0 +1,102 @@
+body{
+    background-color: #12131c;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 25px;
+    color: #dcdef5;
+    margin-left: 85px;
+}
+
+label{
+    padding-top: 30px;
+    width: 180px;
+    display: inline-block;
+}
+input{
+    width: 150px;
+    padding-bottom: 10px;   
+}
+
+input[type="number"]{
+    border: 1px solid black;
+}
+
+select{
+    width: 150px;
+    border: 1px solid black;
+}
+
+form{
+    text-align: center;
+    color: #dcdef5;
+    width: 350px;    
+    height: 500px;
+    border: 2px solid whitesmoke;
+    margin-left: 40px;
+}
+button{
+    margin-top: 20px;
+}
+
+.split{
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+table{
+    margin-left: 30px;
+    margin-top: 50px;
+    border: 2px solid whitesmoke;
+    width: 90%;  
+} 
+td{
+    color: #dcdef5;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    font-size: 14px;
+}
+
+button{
+    color: #dcdef5;
+    background-color: #12131c;
+    box-shadow: 10px whitesmoke;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #6a6e9c;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: whitesmoke;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+

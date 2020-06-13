@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body{
+    background-image: url("/MyNewPage/imgs/home.jpg");
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;       
+}
+.sidebar{
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    background-color: #111;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+.sidebar a{
+    padding: 6px 8px 6px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #818181;
+    display: block;    
+    
+}
+
+.fa{
+    box-sizing: 40px;
+    width: 35px;
+    text-align: center;
+    transition: all .4s;
+}
+
+.fa:hover{
+    background-color: #909FEA;
+    border-radius: 500%;  
+    color: whitesmoke;
+    opacity: 10;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.fa.smi{
+    font-size: 15px;
+    padding-top: 5px;
+    transition: all .5s;
+}
+
+.fa.fa-instagram:hover{
+    background: #e4405f;
+    color: white;
+}
+
+.fa.fa-linkedin:hover{
+    background: #0077b5;
+    color: white;
+}
+
+.fa.fa-github:hover{
+    background: #00405d;
+    color: white;
+}
+
+.fa.fa-twitter:hover{
+    background: #00acee;    
+    color: white;
+}
+
+.logo{
+    text-align: center;
+    color: #818181;
+    background-color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    top: 0;
+    width: 60px;
+    height: 50px;
+    border: 3px solid black;
+    transition: all .4s;
+}
+
+.logo:hover{
+    border: 3px solid whitesmoke;
+    opacity: 10;
+    color: whitesmoke;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+.header{
+    margin-top: 10px;
+    text-align: center;
+}
+.header h1{
+    color: #909FEA;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.header p{
+    font-size: 14px;
+    color: whitesmoke;
+    margin-left: 350px;
+    width: 700px;
+  }
+
+.mini-card-grid {
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 3rem;
+    display: flex;
+}
+.mini-card {
+    position: relative;
+    min-width: 250px;
+    min-height: 300px;
+    background: #909FEA;
+    box-shadow: -1rem 0 3rem #000;
+    border-radius: 16px;
+    transition: .2s;
+}
+
+.mini-card:not(:first-child) {
+    margin-left: -130px;
+}
+.mini-card:hover {
+    transform: translate(0,-1rem);
+}
+.mini-card:hover ~ .mini-card {
+    transform: translateX(130px);
+}
+
+.mini-card h1{
+    width: 250px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+    padding-left: 20px;
+}
+
+  .mini-card p{
+      width: 250px;
+      font-size: 12px;
+      font-weight: 900;
+      color: black;
+      padding-left: 20px;
+  }
+
+.mini-card button{
+    color: red;
+    font-weight: bolder;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.mini-card button:hover{
+    background-color: #a1a1c9;
+}

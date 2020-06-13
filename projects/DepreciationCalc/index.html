@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <script defer src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <title>Depreciation Calculator</title>
+    </head>
+    <body>
+        <div class="split left">
+            <h1>Depreciation Calculator</h1>
+            <form>
+                <label for='assetCost'><span data-toggle="tooltip" title="Amount of the asset/equipment you owe">Asset Cost</span></label> 
+                <input type="number" id="assetCost" min="1000" required/>
+                <br>
+                <label for='salvage'><span data-toggle="tooltip" title="Estimated Amount after total use of the asset">Salvage Value</span></label>
+                <input type="number" id="salvage" min="200" required>
+                <br>
+                <label>Depreciation Method</label>
+                <select id="method" onchange="checkMethod()">
+                    <option value="stLine">Straight Line</option>
+                    <option value="decBal">Declining Balance</option>
+                    <option value="yearDi">Sum of the Year's Digits</option>
+                    </select>
+                <br>
+                <label for="years"><span data-toggle="tooltip" title="Estimated Asset Life">Depreciation Years</span></label>
+                <input type="number" id="years" min="2" max="12" required>
+                <br>
+                <label for="depRate" id="depRateL" style="display: none;">Depreciation Rate</label>
+                <input type="number" id="depRate" max="2" style="display: none;">
+                <br>
+                <button id="calcDepr">Calculate Depreciation</button>
+                <br>
+                <button type="reset" id="reset">Reset</button>
+            </form>
+        </div>
+        <div class="split right" id="output">
+            <canvas id="myChart" style="position: relative; height:35vh; width:75vw;"></canvas>
+        </div>
+    </body>
+</html>
