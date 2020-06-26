@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arpitVakharia</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <style>
+            #map{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!------Menu Options------->
+        <div class="logo"><i class="name">A</i>V</div>
+        <div class="sidebar">
+            <a href="index.html"><i class="fa fa-fw fa-home" data-toggle="tooltip" title="Home" style="font-size: 25px;"></i></a>
+            <a href="about.html"><i class="fa fa-fw fa-child" data-toggle="tooltip" title="About" style="font-size: 25px;"></i></a>
+            <a href="skills.html"><i class="fa fa-fw fa-th-list" data-toggle="tooltip" title="Skill & Experience" style="font-size: 25px;"></i></a>
+            <a href="/otherFiles/MyResume.pdf"><i class="fa fa-fw fa-address-card" data-toggle="tooltip" title="Resume" style="font-size: 25px;"></i></a>
+            <a href="myWork.html"><i class="fa fa-fw fa-briefcase" data-toggle="tooltip" title="My Work" style="font-size: 25px;"></i></a>
+            <a href="https://www.instagram.com/arpitvakharia/" target="_blank"><i class="fa fa-fw fa-instagram smi" style="margin-top: 3em;"></i></a>
+            <a href="https://www.linkedin.com/in/arpit-vakharia-69714a18a/" target="_blank"><i class="fa fa-fw fa-linkedin smi"></i></a>
+            <a href="https://github.com/avakharia781" target="_blank"><i class="fa fa-fw fa-github smi"></i></a>
+            <a href="https://twitter.com/arpit78742486" target="_blank"><i class="fa fa-fw fa-twitter smi"></i></a>
+        </div>
+        <!------Header Text------->
+        <div class="split left">
+            <h1>Contact Me</h1>
+            <p>Our lives imporve only when we take chances. So don't hesitate and press that send button.</p>
+            <form action="mail.php" method="POST" enctype="text/plain">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <br>
+                <input type="text" id="subject" name="sub" placeholder="Subject">
+                <br>
+                <textarea name="main" id="main" name="msg" cols="30" rows="8" placeholder="Message..."></textarea>
+                <br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="split right">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30141.344301779467!2d72.81147188272823!3d19.209696245035932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c71e00b21f%3A0xfa74b1f57d575513!2sKandivali%2C%20Kandivali%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1593100767773!5m2!1sen!2sin" 
+                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!--
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 19.0760, lng: 72.8777};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+            </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe-i5Is5sj-4Wou5KN8KJ0hf9P46iYVEY&callback=initMap"></script>
+        -->
+    </body>
+</html>
