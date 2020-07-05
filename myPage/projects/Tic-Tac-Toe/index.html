@@ -1,32 +1,16 @@
+  
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="source.js" defer></script>
-    <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="scoreBoard">
-        <h5 id="total">Total:</h5>
-        <h5 id="xScore">X:</h5>
-        <h5 id="oScore">O:</h5>
-    </div>
-    <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-    </div>
-    <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <button id="restart">Play Again</button>
-    </div>
+  <script src="minimax.js"></script>
+  <script src="sketch.js"></script>
 </body>
+
 </html>
