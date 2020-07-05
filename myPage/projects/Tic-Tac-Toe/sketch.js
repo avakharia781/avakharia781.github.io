@@ -13,7 +13,7 @@ let board = [
   let switchPlayer;
   function setup() {
     if (screen.width < 1366){
-      createCanvas(200,200)
+      createCanvas(300,300)
     }else{
       createCanvas(400,400)
     }
