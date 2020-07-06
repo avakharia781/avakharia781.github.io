@@ -192,7 +192,7 @@ body{
     }
     .header p{
         font-size: 12px;
-        margin-left: 65px;
+        margin-left: 70px;
         width: 300px;
       }
     
@@ -241,9 +241,12 @@ body{
     
     .mini-card button{
         color: red;
-        font-weight: bolder;
-        margin-left: 50px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-left: 20px;
+        border-radius:10px;
         width: 70px;
+        height: 20px;
     }
     
     .mini-card button:hover{
