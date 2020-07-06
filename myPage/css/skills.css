@@ -162,12 +162,12 @@ body{
 @media (max-width: 576px) {
     .sidebar{
         height: 100%;
-        width: 40px;
+        width: 50px;
         top: 30px;
         padding-top: 40px;
     }    
     .sidebar a{
-        padding: 4px 4px 4px 8px;
+        padding: 5px 5px 5px 10px;
         font-size: small; 
     } 
     .fa{
@@ -185,7 +185,7 @@ body{
         font-size: 1rem;
         padding-left: .1em;
         padding-top: .1em;
-        width: 30px;
+        width: 40px;
         height: 30px;
         border: 1px solid black;
         transition: all .4s;
@@ -194,7 +194,6 @@ body{
         padding-top: 110px ;
         padding-left: 75px;
         text-decoration: none;
-        font-size: 30px;
         width: 480px;
         position: absolute;
     }
@@ -203,17 +202,16 @@ body{
         color: #909FEA;
         letter-spacing: 5px;
         padding-bottom: 2rem;
-        font-size: 30px;
+        font-size: 25px;
     }
     .header p{
-        font-size: 14px;
+        font-size: 13px;
         color: whitesmoke;
+        width:300px;
     }
     
     .animation-container span {
         font-size: .5em;
         font-family: 'Helvetica';
       }
-          
-
-}   
+}

@@ -174,15 +174,15 @@ hr{
     }
   }
 
-@media (max-width: 576px) {
+  @media (max-width: 576px) {
     .sidebar{
         height: 100%;
-        width: 40px;
+        width: 50px;
         top: 30px;
         padding-top: 40px;
     }    
     .sidebar a{
-        padding: 4px 4px 4px 5px;
+        padding: 5px 5px 5px 10px;
         font-size: small; 
     } 
     .fa{
@@ -200,15 +200,15 @@ hr{
         font-size: 1rem;
         padding: 5px 5px;
         top: 0;
-        width: 40px;
+        width: 50px;
         height: 30px;
         border: 1.5px solid black;
         transition: all .4s;
     }  
     h1{
-        padding-top: 120px ;
-        padding-left: 110px;
-        font-size: 30px;
+        padding-top: 140px ;
+        padding-left: 100px;
+        font-size: 25px;
     }
     
     h2{
@@ -236,7 +236,8 @@ hr{
       }  
 
       .wrapper {
-        top: 280px;
+        top: 300px;
+        left: 32%;
         padding-left: 100px;
         -webkit-transform: translate(-50%,-50%);
         font-size: small;

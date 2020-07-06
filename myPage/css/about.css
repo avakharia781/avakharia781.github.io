@@ -165,12 +165,12 @@ body{
 @media (max-width: 576px) {
   .sidebar{
       height: 100%;
-      width: 40px;
+      width: 50px;
       top: 30px;
       padding-top: 40px;
   }    
   .sidebar a{
-      padding: 4px 4px 4px 8px;
+      padding: 5px 5px 5px 10px;
       font-size: small; 
   } 
   .fa{
@@ -188,7 +188,7 @@ body{
       font-size: 1rem;
       padding-left: .1em;
       padding-top: .1em;
-      width: 30px;
+      width: 40px;
       height: 30px;
       border: 1px solid black;
       transition: all .4s;
@@ -197,7 +197,6 @@ body{
     padding-top: 220px ;
     padding-left: 70px;
     text-decoration: none;
-    font-size: 30px;
     width: 480px;
     position: relative;
   }
@@ -206,18 +205,19 @@ body{
     letter-spacing: 5px;
     padding-bottom: 2rem;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
   }
   .header p{
     font-size: 12px;
     color: whitesmoke;
+    width:300px;
   }
   span{
-      font-size: 14px;
+      font-size: 12px;
   } 
   .container {
     border: solid 2px #909FEA;
-    left: 280px;
+    left: 220px;
     height: 150px;
     width: 150px;
   }
